@@ -34,10 +34,10 @@ io.on("connection", (socket) => {
 
   socket.on("my-event", (data) => {
     console.log("Received data:", data);
-    io.emit("my-event-response", "Received data successfully");
+    io.emit("my-event-response", "Received data successfully.");
   });
 
   socket.on("disconnect", () => {
-    console.log("A client has disconnected");
+    console.log("A client has disconnected.");
   });
 });
