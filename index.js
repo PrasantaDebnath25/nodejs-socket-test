@@ -28,7 +28,7 @@ const io = new Server(server, {
 const connectedClients = {};
 
 io.on("connection", (socket) => {
-  console.log('A client has connected with socket id:', socket.id);
+  console.log('A client has connected with socket id: ', socket.id);
 
   connectedClients[socket.id] = socket;
 
